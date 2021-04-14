@@ -5,15 +5,15 @@ layout: default
 
   <header class="post-header border-bottom">
     <h1 class="post-title p-name f-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <div class="post-meta mt-4 mb-3 row justify-content-between">
-      <div class="col-auto">
+    <div class="post-meta my-3 row justify-content-between">
+      <div class="col-auto mt-1">
         <span class="badge bg-info me-2">tags</span>
         {% if page.tags %}
           {% for tag in page.tags %}{% if forloop.index > 1 %},{% endif %} {{ tag }}{% endfor %}
         {% endif %}
       </div>
 
-      <div class="col-auto">
+      <div class="col-auto mt-1">
         <time class="dt-published text-muted fw-light" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {%- assign date_format = site.minima.date_format | default: "%Y.%m.%d %H:%M:%S" -%}
           {{ page.date | date: date_format }}

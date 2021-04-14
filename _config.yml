@@ -26,12 +26,15 @@ url: "http://h2.1023labs.com" # the base hostname & protocol for your site, e.g.
 # twitter_username: jekyllrb
 # github_username:  jekyll
 permalink: /:categories/:title/
+paginate: 20
+paginate_path: "/posts/page:num/"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-paginate
 
 sass: 
   sass_dir: _sass 
