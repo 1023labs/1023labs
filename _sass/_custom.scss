@@ -11,6 +11,16 @@ ul, ol {
   padding-left: 0;
 }
 
+header {
+  a, a:hover, a:visited {
+    color: #212529;
+  }
+}
+
+.container {
+  max-width: 900px;
+}
+
 .f-post-title {
   line-height: 1.4;
   font-family: 'NanumSquare', sans-serif !important;
