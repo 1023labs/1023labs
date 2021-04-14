@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header border-bottom">
+    <h1 class="post-title p-name f-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="post-meta mt-4 mb-3 row justify-content-between">
+      <div class="col-auto">
+        <span class="badge bg-info me-2">tags</span>
+        {% if page.tags %}
+          {% for tag in page.tags %}{% if forloop.index > 1 %},{% endif %} {{ tag }}{% endfor %}
+        {% endif %}
+      </div>
+
+      <div class="col-auto">
+        <time class="dt-published text-muted fw-light" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%Y.%m.%d %H:%M:%S" -%}
+          {{ page.date | date: date_format }}
+        </time>
+      </div>
+
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

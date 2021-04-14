@@ -21,7 +21,6 @@
 title: 1023Labs
 email: one@1023labs.com
 description: >- # this means to ignore newlines until "baseurl:"
-  1023labs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://h2.1023labs.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb

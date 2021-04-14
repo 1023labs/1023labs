@@ -3,7 +3,7 @@ layout: post
 title:  "javascript+php, RSA 암호화"
 date:   2014-08-28 21:00:00 +0900
 categories: posts
-tags: [개발, 암호화, 웹취약성, javascript, php, RSA]
+tags: [tip, 개발, 암호화, 웹취약성, javascript, php, RSA]
 redirect_from: /posts/21
 ---
 웹 취약성 검사에서 javascript + php 암호화 소스를 찾던 중, AES소스를 찾아 적용해 놓았으나  
