@@ -6,6 +6,11 @@ a, a:hover {
   text-decoration: none;
 }
 
+ul, ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
 .f-post-title {
   font-family: 'NanumSquare', sans-serif !important;
 }

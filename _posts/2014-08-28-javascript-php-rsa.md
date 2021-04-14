@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "javascript+php, RSA 암호화"
-date:   2014-08-28 21:00:00 +0900
+date:   2014-08-28 21:00:02 +0900
 categories: posts
 tags: [tip, 개발, 암호화, 웹취약성, javascript, php, RSA]
 redirect_from: /posts/21
