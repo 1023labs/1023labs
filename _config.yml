@@ -33,8 +33,9 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
-sass:
-   sass_dir: css
+sass: 
+  sass_dir: _sass 
+  style: :compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
