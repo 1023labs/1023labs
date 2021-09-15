@@ -31,4 +31,14 @@ layout: default
     </ul>
   {%- endif -%}
 
+  {% assign page_count = site.posts.size | divided_by: site.paginate %}
+
+  <div class="pagination">
+    <span class="previous">Previous</span>
+    <span class="page_number mx-5">
+      Page: 1 of {{ page_count }}
+    </span>
+    <a href="/posts/page2" class="next">Next</a>
+  </div>
+
 </div>
