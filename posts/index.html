@@ -3,6 +3,8 @@ layout: default
 title: My Blog
 ---
 
+{%- assign date_format = site.minima.date_format | default: "%Y.%m.%d" -%}
+
 <!-- This loops through the paginated posts -->
 <ul class="post-list">
   {% for post in paginator.posts %}
@@ -13,7 +15,13 @@ title: My Blog
       </a>
     </h3>
 
+    <p class="text-muted">
+      {{ post.content | strip_html | truncate: 120, "" }}
+    </p>
+
     <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+    <hr class="my-5 border-dashed" />
   </li>
   {% endfor %}
 </ul>
